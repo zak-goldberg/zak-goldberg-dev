@@ -4,9 +4,9 @@ import { Laptop } from "lucide-react";
 function App() {
   return (
     <div>
-      <div className="fixed top-0 left-0 right-0 z-50">
+      <div className="fixed top-0 left-0 right-0 z-50 py-2">
         <div className="container mx-auto px-4">
-        <Navbar fluid rounded border className="bg-gray-800">
+        <Navbar fluid rounded border className="bg-[#1a1e2e]">
           <Navbar.Brand href="/">
             <Laptop className="text-white mr-3 h-6 sm:h-9" alt="logo icon"/>
             <span className="self-center whitespace-nowrap text-xl font-semibold text-white">Zak Goldberg</span>
@@ -21,10 +21,10 @@ function App() {
         </div>
       </div>
       <section id="welcome-panel" className="container mx-auto pt-20 pb-2 px-4">
-        <div className = "flex flex-col justify-evenly items-center md:flex md:flex-row md:justify-evenly border rounded ">
-            <div className="flex flex-row justify-evenly md:flex md:flex-col md:justify-evenly">
-              <h4 className="text-2xl lg:text-7xl md:text-5xl md:mx-auto px-2 py-2 font-bold text-white">Welcome 👋🏼</h4>
-              <h4 className="text-xl lg:text-6xl md:text-4xl md:mx-auto px-2 py-2 text-white">I am Zak Goldberg</h4>
+        <div className = "flex flex-col items-center md:flex md:flex-row md:justify-evenly border rounded ">
+            <div className="flex flex-row md:flex md:flex-col md:justify-evenly">
+              <h4 className="text-2xl lg:text-7xl md:text-5xl px-2 py-2 font-bold text-white">Welcome 👋🏼</h4>
+              <h4 className="text-xl lg:text-6xl md:text-4xl md:mx-auto px-2 py-2 text-white">I'm Zak Goldberg</h4>
             </div>
             <div className="w-1/2 sm:py-4">
               <img className="w-3/4 h-auto py-2 mx-auto md:w-1/2 md:h-auto md:py-5 md:mx-auto" src="/zak_addie.jpg" />
@@ -56,13 +56,13 @@ function App() {
         </div>
       </section>
       <section id="about-me-cards" className="container mx-auto py-2 px-4">
-        <div className = "flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <Card className="flex-1 w-full flex flex-col justify-start md:w-1/2 max-w-md">
+        <div className = "flex flex-col gap-4 md:flex md:flex-row">
+          <Card className="flex-1">
             <h3 className="text-2xl font-bold">Who am I?</h3>
             <p>I am an SF Bay Area based software professional with 9+ years of experience working at Amazon and AWS. I am focused on backend development with the Express, Node, and PostgreSQL stack and am excited to learn new languages and technologies. This page was built using React, Tailwind CSS, and Flowbite React. Click on the links in the navigation bar for more details on my experience or to contact me.</p>
-            <p>Outside of work I love spending time with my wife, daughter, and family. I love being outside running, cycling, and xc skiing. I also love to read and follow the Virginia Cavaliers, Orlando Magic, and GSW.</p>
+            <p>Outside of work I love spending time with my wife, daughter, and family. I love being outside running, cycling, and xc skiing. I also love to read and follow the Virginia Cavaliers, Orlando Magic, and the Golden State Warriors.</p>
           </Card>
-          <Card className="flex-1 w-full">
+          <Card className="flex-1">
             <h3 className="text-2xl font-bold">Work Summary</h3>
             <Timeline>
               <Timeline.Item>
@@ -89,9 +89,13 @@ function App() {
           </Card>
         </div>
       </section>
-      <Footer container className="bg-gray-800 container mx-auto px-4 py-5 border">
-        <span className="text-white">2024 Zak Goldberg. All Rights Reserved.</span>
-      </Footer>
+      <section id="footer-container" className="container mx-auto px-4 py-2">
+        <div className="bg-[#1a1e2e] py-2 border rounded justify-evenly">
+          <Footer className="bg-[#1a1e2e] px-2">
+            <span className="text-white">Copyright © 2024 Zak Goldberg. All Rights Reserved.</span>
+          </Footer>
+        </div>
+      </section>
     </div>
   )
 }
