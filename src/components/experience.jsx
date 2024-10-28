@@ -3,8 +3,8 @@ import { Card, Timeline } from "flowbite-react";
 const Experience = () => {
   return (
     <>
-      <div className="pt-20 px-4">
-        <Card className="flex-1 container mx-auto">
+      <div className="container mx-auto px-4 pt-20">
+        <Card className="flex-1">
           <h3 className="text-2xl font-bold">Work Experience</h3>
           <Timeline>
             <Timeline.Item>
