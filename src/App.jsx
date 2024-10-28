@@ -1,25 +1,11 @@
-import { Navbar, Card, Timeline, Footer } from "flowbite-react";
-import { Laptop } from "lucide-react";
+import { Card, Timeline, Footer } from "flowbite-react";
+import MyNavbar from "./components/navbar";
+import MyFooter from "./components/footer"
 
 function App() {
   return (
     <div>
-      <div className="fixed top-0 left-0 right-0 z-50 py-2">
-        <div className="container mx-auto px-4">
-        <Navbar fluid rounded border className="bg-[#1a1e2e]">
-          <Navbar.Brand href="/">
-            <Laptop className="text-white mr-3 h-6 sm:h-9" alt="logo icon"/>
-            <span className="self-center whitespace-nowrap text-xl font-semibold text-white">Zak Goldberg</span>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-          <Navbar.Collapse>
-            <Navbar.Link href="#Experience" className= "text-white">Experience</Navbar.Link>
-            <Navbar.Link href="#Contact" className= "text-white">Contact</Navbar.Link>
-            <Navbar.Link href="#Resume" className= "text-white">Resume</Navbar.Link>
-          </Navbar.Collapse>
-        </Navbar>
-        </div>
-      </div>
+      <MyNavbar />
       <section id="welcome-panel" className="container mx-auto pt-20 pb-2 px-4">
         <div className = "flex flex-col items-center md:flex md:flex-row md:justify-evenly border rounded ">
             <div className="flex flex-row md:flex md:flex-col md:justify-evenly">
@@ -89,13 +75,7 @@ function App() {
           </Card>
         </div>
       </section>
-      <section id="footer-container" className="container mx-auto px-4 py-2">
-        <div className="bg-[#1a1e2e] py-2 border rounded justify-evenly">
-          <Footer className="bg-[#1a1e2e] px-2">
-            <span className="text-white">Copyright © 2024 Zak Goldberg. All Rights Reserved.</span>
-          </Footer>
-        </div>
-      </section>
+      <MyFooter />
     </div>
   )
 }
