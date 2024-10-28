@@ -5,7 +5,8 @@ import Root from "./routes/root";
 import "./index.css";
 import ErrorPage from "./components/error-page.jsx";
 import HomePageContent from "./components/home-page-content.jsx";
-import Experience from "./components/experience.jsx"
+import Experience from "./components/experience.jsx";
+import ListeningTo from "./components/listening-to.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +20,12 @@ const router = createBrowserRouter([
       },
       {
         path: "experience",
-        element: <Experience />
-      }
+        element: <Experience />,
+      },
+      {
+        path: "listening-to",
+        element: <ListeningTo />,
+      },
     ],
   },
 ]);

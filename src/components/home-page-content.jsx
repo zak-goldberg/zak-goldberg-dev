@@ -1,4 +1,5 @@
 import { Card, Timeline } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 const HomePageContent = () => {
   return (
@@ -70,7 +71,7 @@ const HomePageContent = () => {
           </a>
           <a
             className="block w-12 h-12 hover:opacity-80 transition-opacity"
-            href="/"
+            href="/listening-to"
             rel="noopener noreferrer"
           >
             <svg
