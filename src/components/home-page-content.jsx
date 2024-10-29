@@ -1,5 +1,17 @@
 import { Card, Timeline, TimelineContent } from "flowbite-react";
 import { Link } from "react-router-dom";
+import {
+  ReactIcon,
+  PsqlIcon,
+  NodeIcon,
+  ExpressIcon,
+  HtmlIcon,
+  CssIcon,
+  PostmanIcon,
+  GitIcon,
+  MochaIcon,
+  RenderIcon
+} from "./si-icons";
 
 const HomePageContent = () => {
   return (
@@ -86,32 +98,68 @@ const HomePageContent = () => {
       </section>
       <section id="about-me-cards" className="container mx-auto py-2 px-4">
         <div className="flex flex-col gap-4 md:flex md:flex-row">
-          <div className="flex-1 flex flex-col gap-2">
-            <Card className="h-fit">
-              <h3 className="text-2xl font-bold">Who am I?</h3>
-              <p>
-                I am an SF Bay Area based software professional with 9+ years of
-                experience working at Amazon and AWS. I am focused on backend
-                development with the Express, Node, and PostgreSQL stack and am
-                excited to learn new languages and technologies. This page was
-                built using React, Tailwind CSS, and Flowbite React. Click on
-                the links in the navigation bar for more details on my
-                experience or to contact me.
-              </p>
-              <p>
-                Outside of work I love spending time with my wife, daughter, and
-                family. I love being outside running, cycling, and xc skiing. I
-                also love to read and follow the Virginia Cavaliers, Orlando
-                Magic, and the Golden State Warriors.
-              </p>
+          <div className="flex-1 flex flex-col gap-4">
+            <Card className="h-full">
+                <h3 className="text-2xl font-bold">Who am I?</h3>
+                <p>
+                  I am an SF Bay Area based software professional with 9+ years
+                  of experience working at Amazon and AWS. I am focused on
+                  backend development with the Express, Node, and PostgreSQL
+                  stack and am excited to learn new languages and technologies.
+                  This page was built using React, Tailwind CSS, and Flowbite
+                  React. Click on the links in the navigation bar for more
+                  details on my experience or to contact me.
+                </p>
+                <p>
+                  Outside of work I love spending time with my wife, daughter,
+                  and family. I love being outside running, cycling, and xc
+                  skiing. I also love to read and follow the Virginia Cavaliers,
+                  Orlando Magic, and the Golden State Warriors.
+                </p>
             </Card>
-            <Card>
-              <h3 className="text-2xl font-bold">Skills</h3>
+            <Card className="h-fit flex justify-start">
+              <h3 className="text-2xl font-bold">Skills & Tools</h3>
               <div className="grid grid-cols-2 gap-2" id="skills-container">
-                <span>Node.JS</span>
-                <span>Express.JS</span>
-                <span>PostgreSQL</span>
-                <span>React.JS</span>
+                <div className="flex gap-2">
+                  <NodeIcon />
+                  <span>Node.JS</span>
+                </div>
+                <div className="flex gap-2">
+                  <ExpressIcon />
+                  <span>Express.JS</span>
+                </div>
+                <div className="flex gap-2">
+                  <PsqlIcon />
+                  <span>PostgreSQL</span>
+                </div>
+                <div className="flex gap-2">
+                  <ReactIcon />
+                  <span>React.JS</span>
+                </div>
+                <div className="flex gap-2">
+                  <MochaIcon />
+                  <span>Mocha & Chai</span>
+                </div>
+                <div className="flex gap-2">
+                  <HtmlIcon />
+                  <span>HTML</span>
+                </div>
+                <div className="flex gap-2">
+                  <CssIcon />
+                  <span>CSS</span>
+                </div>
+                <div className="flex gap-2">
+                  <GitIcon />
+                  <span>Git & GitHub</span>
+                </div>
+                <div className="flex gap-2">
+                  <PostmanIcon />
+                  <span>Postman</span>
+                </div>
+                <div className="flex gap-2">
+                  <RenderIcon />
+                  <span>Render Deployment</span>
+                </div>
               </div>
             </Card>
           </div>
