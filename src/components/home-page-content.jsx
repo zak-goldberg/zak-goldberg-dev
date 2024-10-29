@@ -1,4 +1,4 @@
-import { Card, Timeline } from "flowbite-react";
+import { Card, Timeline, TimelineContent } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 const HomePageContent = () => {
@@ -86,24 +86,35 @@ const HomePageContent = () => {
       </section>
       <section id="about-me-cards" className="container mx-auto py-2 px-4">
         <div className="flex flex-col gap-4 md:flex md:flex-row">
-          <Card className="flex-1">
-            <h3 className="text-2xl font-bold">Who am I?</h3>
-            <p>
-              I am an SF Bay Area based software professional with 9+ years of
-              experience working at Amazon and AWS. I am focused on backend
-              development with the Express, Node, and PostgreSQL stack and am
-              excited to learn new languages and technologies. This page was
-              built using React, Tailwind CSS, and Flowbite React. Click on the
-              links in the navigation bar for more details on my experience or
-              to contact me.
-            </p>
-            <p>
-              Outside of work I love spending time with my wife, daughter, and
-              family. I love being outside running, cycling, and xc skiing. I
-              also love to read and follow the Virginia Cavaliers, Orlando
-              Magic, and the Golden State Warriors.
-            </p>
-          </Card>
+          <div className="flex-1 flex flex-col gap-2">
+            <Card className="h-fit">
+              <h3 className="text-2xl font-bold">Who am I?</h3>
+              <p>
+                I am an SF Bay Area based software professional with 9+ years of
+                experience working at Amazon and AWS. I am focused on backend
+                development with the Express, Node, and PostgreSQL stack and am
+                excited to learn new languages and technologies. This page was
+                built using React, Tailwind CSS, and Flowbite React. Click on
+                the links in the navigation bar for more details on my
+                experience or to contact me.
+              </p>
+              <p>
+                Outside of work I love spending time with my wife, daughter, and
+                family. I love being outside running, cycling, and xc skiing. I
+                also love to read and follow the Virginia Cavaliers, Orlando
+                Magic, and the Golden State Warriors.
+              </p>
+            </Card>
+            <Card>
+              <h3 className="text-2xl font-bold">Skills</h3>
+              <div className="grid grid-cols-2 gap-2" id="skills-container">
+                <span>Node.JS</span>
+                <span>Express.JS</span>
+                <span>PostgreSQL</span>
+                <span>React.JS</span>
+              </div>
+            </Card>
+          </div>
           <Card className="flex-1">
             <h3 className="text-2xl font-bold">Work Summary</h3>
             <Timeline>
@@ -115,8 +126,10 @@ const HomePageContent = () => {
                     Software Development Manager - AWS
                   </Timeline.Title>
                   <Timeline.Body>
-                    Managed a team of up to 12 SDEs building backend
-                    microservices.
+                    Managed a team of up to 12 SDEs that owned 6 backend
+                    microservices and supported the delivery of multiple complex
+                    development initiatives including new feature releases,
+                    non-functional improvements, and stack regionalization.
                   </Timeline.Body>
                 </Timeline.Content>
                 <Timeline.Point />
@@ -125,7 +138,13 @@ const HomePageContent = () => {
                   <Timeline.Title>
                     Sr. Technical Program Manager - AWS
                   </Timeline.Title>
-                  <Timeline.Body>Managed large software projects</Timeline.Body>
+                  <Timeline.Body>
+                    Led multiple large software projects within AWS
+                    Infrastructure throughout the SDLC. One example was a
+                    project to synchronize data center assets across systems,
+                    provide suppliers a mechanism to provide data on asses
+                    up-front.
+                  </Timeline.Body>
                 </Timeline.Content>
                 <Timeline.Point />
                 <Timeline.Content>
@@ -133,8 +152,25 @@ const HomePageContent = () => {
                   <Timeline.Title>
                     Technical Program Manager - AWS
                   </Timeline.Title>
-                  <Timeline.Body>Managed large software projects</Timeline.Body>
+                  <Timeline.Body>
+                    Led a team of 6 software engineers to develop the software I
+                    proposed in a vision document through all phases of the
+                    SDLC. This software is now used as the single source of
+                    truth for data center builds and testing across AWS' global
+                    data center network.
+                  </Timeline.Body>
                 </Timeline.Content>
+                <TimelineContent>
+                  <Timeline.Body>
+                    More on my exprience{" "}
+                    <Link
+                      to={"/experience"}
+                      className="mx-1 hover:text-black underline"
+                    >
+                      here.
+                    </Link>
+                  </Timeline.Body>
+                </TimelineContent>
               </Timeline.Item>
             </Timeline>
           </Card>
