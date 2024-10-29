@@ -7,6 +7,7 @@ import ErrorPage from "./components/error-page.jsx";
 import HomePageContent from "./components/home-page-content.jsx";
 import Experience from "./components/experience.jsx";
 import ListeningTo from "./components/listening-to.jsx";
+import Projects from "./components/projects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         path: "listening-to",
         element: <ListeningTo />,
       },
+      {
+        path: "projects",
+        element: <Projects />
+      }
     ],
   },
 ]);

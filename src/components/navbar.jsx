@@ -24,7 +24,7 @@ function MyNavbar() {
               <Navbar.Link as={Link} to="projects" className="text-white">
                 Projects
               </Navbar.Link>
-              <Navbar.Link href="#Resume" className="text-white">
+              <Navbar.Link href="/zjg_resume.pdf" className="text-white">
                 Resume
               </Navbar.Link>
               <Navbar.Link

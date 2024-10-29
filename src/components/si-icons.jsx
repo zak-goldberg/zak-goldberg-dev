@@ -8,7 +8,9 @@ import {
   siPostman,
   siHtml5,
   siCss3,
-  siRender
+  siRender,
+  siReactrouter,
+  siTailwindcss,
 } from "simple-icons";
 
 const ReactIcon = () => {
@@ -181,4 +183,51 @@ const RenderIcon = () => {
   );
 };
 
-export { ReactIcon, NodeIcon, PsqlIcon, ExpressIcon, CssIcon, PostmanIcon, GitIcon, HtmlIcon, MochaIcon, RenderIcon };
+const ReactRouterIcon = () => {
+  return (
+    <div>
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="black"
+      >
+        <path d={siReactrouter.path} />
+      </svg>
+    </div>
+  );
+};
+
+const TailwindIcon = () => {
+  return (
+    <div>
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="black"
+      >
+        <path d={siTailwindcss.path} />
+      </svg>
+    </div>
+  );
+};
+
+export {
+  ReactIcon,
+  NodeIcon,
+  PsqlIcon,
+  ExpressIcon,
+  CssIcon,
+  PostmanIcon,
+  GitIcon,
+  HtmlIcon,
+  MochaIcon,
+  RenderIcon,
+  ReactRouterIcon,
+  TailwindIcon
+};
