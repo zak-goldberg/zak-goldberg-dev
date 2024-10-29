@@ -11,6 +11,7 @@ import {
   siRender,
   siReactrouter,
   siTailwindcss,
+  siMongodb
 } from "simple-icons";
 
 const ReactIcon = () => {
@@ -217,6 +218,23 @@ const TailwindIcon = () => {
   );
 };
 
+const MongoIcon = () => {
+  return (
+    <div>
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="black"
+      >
+        <path d={siMongodb.path} />
+      </svg>
+    </div>
+  );
+};
+
 export {
   ReactIcon,
   NodeIcon,
@@ -229,5 +247,6 @@ export {
   MochaIcon,
   RenderIcon,
   ReactRouterIcon,
-  TailwindIcon
+  TailwindIcon,
+  MongoIcon
 };

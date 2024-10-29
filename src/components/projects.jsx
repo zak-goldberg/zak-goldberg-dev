@@ -1,11 +1,20 @@
 import { Card } from "flowbite-react";
-import { NodeIcon, ExpressIcon, PsqlIcon, MochaIcon, ReactIcon, ReactRouterIcon, TailwindIcon } from "./si-icons";
+import {
+  NodeIcon,
+  ExpressIcon,
+  PsqlIcon,
+  MochaIcon,
+  ReactIcon,
+  ReactRouterIcon,
+  TailwindIcon,
+  MongoIcon
+} from "./si-icons";
 import { Puzzle } from "lucide-react";
 
 const Projects = () => {
   return (
     <>
-      <div className="container mx-auto px-4 pt-20 grid grid-cols-3 gap-2">
+      <div className="container mx-auto px-4 pt-20 flex flex-col gap-2 md:grid md:grid-cols-3">
         <Card>
           <h3 className="text-xl font-bold">Personal Budget Web Service</h3>
           <p>
@@ -68,14 +77,31 @@ const Projects = () => {
             </div>
           </div>
         </Card>
-        <Card className="justify-between">
+        <Card>
           <h3 className="text-xl font-bold">Listening To Page</h3>
           <p>
-            Chron job to fetch my Spotify listening data, storing it in a database, and serving it via an API to this app.
+            Chron job to fetch my Spotify listening data, storing it in a
+            database, and serving it via an API to this app.
           </p>
-          <a>
-            Link to repo TBD
-          </a>
+          <a>Link to repo TBD</a>
+          <div className="grid grid-cols-2 gap-2">
+            <div className="flex gap-2">
+              <NodeIcon />
+              <span>Node.JS</span>
+            </div>
+            <div className="flex gap-2">
+              <ExpressIcon />
+              <span>Express.JS</span>
+            </div>
+            <div className="flex gap-2">
+              <MongoIcon />
+              <span>MongoDB</span>
+            </div>
+            <div className="flex gap-2">
+              <MochaIcon />
+              <span>Mocha & Chai</span>
+            </div>
+          </div>
         </Card>
       </div>
     </>
