@@ -11,9 +11,8 @@ const Experience = () => {
               <Timeline.Point />
               <Timeline.Content>
                 <Timeline.Time>May 2024</Timeline.Time>
-                <Timeline.Title>
-                  Software Development Manager - AWS
-                </Timeline.Title>
+                <Timeline.Title>Software Development Manager</Timeline.Title>
+                <h5 className="font-light">AWS - Bellevue, WA</h5>
                 <Timeline.Body>
                   I managed a team of up to 12 software engineers that owned 6
                   backend microservices. I was responsible for people
@@ -29,9 +28,8 @@ const Experience = () => {
               <Timeline.Point />
               <Timeline.Content>
                 <Timeline.Time>Dec 2021</Timeline.Time>
-                <Timeline.Title>
-                  Sr. Technical Program Manager - AWS
-                </Timeline.Title>
+                <Timeline.Title>Sr. Technical Program Manager</Timeline.Title>
+                <h5 className="font-light">AWS - Bellevue, WA</h5>
                 <Timeline.Body>
                   I led multiple large software projects within AWS
                   Infrastructure. These included a project to synchronize asset
@@ -47,7 +45,8 @@ const Experience = () => {
               <Timeline.Point />
               <Timeline.Content>
                 <Timeline.Time>Jul 2020</Timeline.Time>
-                <Timeline.Title>Technical Program Manager - AWS</Timeline.Title>
+                <Timeline.Title>Technical Program Manager</Timeline.Title>
+                <h5 className="font-light">AWS - Seattle, WA</h5>
                 <Timeline.Body>
                   I led a team of 6 software engineers to develop the software I
                   proposed in the Build Coordination PR-FAQ through all phases
@@ -67,7 +66,8 @@ const Experience = () => {
               <Timeline.Point />
               <Timeline.Content>
                 <Timeline.Time>Jul 2019</Timeline.Time>
-                <Timeline.Title>Technical Program Manager - AWS</Timeline.Title>
+                <Timeline.Title>Technical Program Manager</Timeline.Title>
+                <h5 className="font-light">AWS - Seattle, WA</h5>
                 <Timeline.Body>
                   I managed relationships with internal software development
                   teams and external software vendors on behalf of the
@@ -84,7 +84,8 @@ const Experience = () => {
               <Timeline.Point />
               <Timeline.Content>
                 <Timeline.Time>Mar 2018</Timeline.Time>
-                <Timeline.Title>Program Manager - AWS</Timeline.Title>
+                <Timeline.Title>Program Manager</Timeline.Title>
+                <h5 className="font-light">AWS - Seattle, WA</h5>
                 <Timeline.Body>
                   I managed power, space, and cooling availability for server
                   racks incoming to AWS' data centers.
@@ -95,7 +96,8 @@ const Experience = () => {
               <Timeline.Point />
               <Timeline.Content>
                 <Timeline.Time>Jun 2016</Timeline.Time>
-                <Timeline.Title>Program Manager - Amazon.com</Timeline.Title>
+                <Timeline.Title>Program Manager</Timeline.Title>
+                <h5 className="font-light">Amazon.com - Seattle, WA</h5>
                 <Timeline.Body>
                   I managed vendor relationships, in-stock, and promotions for
                   arts & crafts items and vacuums sold by Amazon.com.

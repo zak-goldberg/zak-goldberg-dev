@@ -10,7 +10,7 @@ import {
   PostmanIcon,
   GitIcon,
   MochaIcon,
-  RenderIcon
+  RenderIcon,
 } from "./si-icons";
 
 const HomePageContent = () => {
@@ -26,10 +26,10 @@ const HomePageContent = () => {
               I'm Zak Goldberg
             </h4>
           </div>
-          <div className="w-1/2 sm:py-4">
+          <div className="w-1/2 py-2">
             <img
-              className="w-3/4 h-auto py-2 mx-auto md:w-1/2 md:h-auto md:py-5 md:mx-auto"
-              src="/zak_addie.jpg"
+              className="border rounded w-3/4 h-auto mx-auto md:w-1/2 md:h-auto md:mx-auto"
+              src="/zjg_headshot.jpg"
             />
           </div>
         </div>
@@ -98,25 +98,42 @@ const HomePageContent = () => {
       </section>
       <section id="about-me-cards" className="container mx-auto py-2 px-4">
         <div className="flex flex-col gap-4 md:flex md:flex-row">
-          <div className="flex-1 flex flex-col gap-4">
-            <Card className="h-full">
-                <h3 className="text-2xl font-bold">Who am I?</h3>
-                <p>
-                  I am an SF Bay Area based software professional with 9+ years
-                  of experience working at Amazon and AWS. I am focused on
-                  backend development with the Express, Node, and PostgreSQL
-                  stack and am excited to learn new languages and technologies.
-                  This page was built using React, Tailwind CSS, and Flowbite
-                  React. Click on the links in the navigation bar for more
-                  details on my experience or to contact me.
-                </p>
-                <p>
-                  Outside of work I love spending time with my wife, daughter,
-                  and family. I love being outside running, cycling, and xc
-                  skiing. I also love to read and follow the Virginia Cavaliers,
-                  Orlando Magic, and the Golden State Warriors.
-                </p>
-            </Card>
+          <Card className="h-fit w-full md:w-1/2">
+            <h3 className="text-2xl font-bold">Who am I?</h3>
+            <h4 className="text-xl font-semibold">Experience</h4>
+            <p>
+              I'm an SF Bay Area based software professional with over 9 years
+              of experience at Amazon and AWS, where I've served as both a
+              Software Development Manager and Technical Program Manager. I'm
+              now seeking a Software Development Engineer role where I can apply
+              my diverse technical background and leadership experience.
+            </p>
+            <h4 className="text-xl font-semibold">Pragmatic Solutions & Impact</h4>
+            <p>
+              My time in management has given me a unique perspective on
+              software development, allowing me to balance pragmatic solutions
+              with strategic thinking. I consistently drive impact beyond
+              immediate team boundaries and thrive on building solutions that
+              scale.
+            </p>
+            <h4 className="text-xl font-semibold">Collaboration & Inclusion</h4>
+            <p>
+              Known for my easy-going nature and empathetic approach, I believe
+              the best solutions emerge from collaborative teamwork. I bring a
+              low-ego mindset to every project, focusing on collective success
+              rather than individual recognition. My leadership experience has
+              reinforced the value of fostering an inclusive environment where
+              team members feel heard and supported.
+            </p>
+            <h4 className="text-xl font-semibold">Not Just an Office Drone</h4>
+            <p>
+              I love spending time with my wife, daughter, and family. I love
+              being outside running, cycling, and xc skiing. I also love to read
+              and follow the Virginia Cavaliers, the Orlando Magic, and the Golden
+              State Warriors.
+            </p>
+          </Card>
+          <div className="flex flex-col gap-4 w-full md:w-1/2">
             <Card className="h-fit flex justify-start">
               <h3 className="text-2xl font-bold">Skills & Tools</h3>
               <div className="grid grid-cols-2 gap-2" id="skills-container">
@@ -162,66 +179,68 @@ const HomePageContent = () => {
                 </div>
               </div>
             </Card>
+            <Card className="flex-1 h-fit">
+              <h3 className="text-2xl font-bold">Work Summary</h3>
+              <Timeline>
+                <Timeline.Item>
+                  <Timeline.Point />
+                  <Timeline.Content>
+                    <Timeline.Time>May 2024</Timeline.Time>
+                    <Timeline.Title>
+                      Software Development Manager
+                    </Timeline.Title>
+                    <h5 className="font-light">AWS</h5>
+                    <Timeline.Body>
+                      Managed a team of up to 12 SDEs that owned 6 backend
+                      microservices and supported the delivery of multiple
+                      complex development initiatives including new feature
+                      releases, non-functional improvements, and stack
+                      regionalization.
+                    </Timeline.Body>
+                  </Timeline.Content>
+                  <Timeline.Point />
+                  <Timeline.Content>
+                    <Timeline.Time>Dec 2021</Timeline.Time>
+                    <Timeline.Title>
+                      Sr. Technical Program Manager
+                    </Timeline.Title>
+                    <h5 className="font-light">AWS</h5>
+                    <Timeline.Body>
+                      Led multiple large software projects within AWS
+                      Infrastructure throughout the SDLC. One example was a
+                      project to synchronize data center assets across systems,
+                      provide suppliers a mechanism to provide data on asses
+                      up-front.
+                    </Timeline.Body>
+                  </Timeline.Content>
+                  <Timeline.Point />
+                  <Timeline.Content>
+                    <Timeline.Time>Jul 2020</Timeline.Time>
+                    <Timeline.Title>Technical Program Manager</Timeline.Title>
+                    <h5 className="font-light">AWS</h5>
+                    <Timeline.Body>
+                      Led a team of 6 software engineers to develop the software
+                      I proposed in a vision document through all phases of the
+                      SDLC. This software is now used as the single source of
+                      truth for data center builds and testing across AWS'
+                      global data center network.
+                    </Timeline.Body>
+                  </Timeline.Content>
+                  <TimelineContent>
+                    <Timeline.Body>
+                      More on my exprience{" "}
+                      <Link
+                        to={"/experience"}
+                        className="mx-1 hover:text-black underline"
+                      >
+                        here.
+                      </Link>
+                    </Timeline.Body>
+                  </TimelineContent>
+                </Timeline.Item>
+              </Timeline>
+            </Card>
           </div>
-          <Card className="flex-1">
-            <h3 className="text-2xl font-bold">Work Summary</h3>
-            <Timeline>
-              <Timeline.Item>
-                <Timeline.Point />
-                <Timeline.Content>
-                  <Timeline.Time>May 2024</Timeline.Time>
-                  <Timeline.Title>
-                    Software Development Manager - AWS
-                  </Timeline.Title>
-                  <Timeline.Body>
-                    Managed a team of up to 12 SDEs that owned 6 backend
-                    microservices and supported the delivery of multiple complex
-                    development initiatives including new feature releases,
-                    non-functional improvements, and stack regionalization.
-                  </Timeline.Body>
-                </Timeline.Content>
-                <Timeline.Point />
-                <Timeline.Content>
-                  <Timeline.Time>Dec 2021</Timeline.Time>
-                  <Timeline.Title>
-                    Sr. Technical Program Manager - AWS
-                  </Timeline.Title>
-                  <Timeline.Body>
-                    Led multiple large software projects within AWS
-                    Infrastructure throughout the SDLC. One example was a
-                    project to synchronize data center assets across systems,
-                    provide suppliers a mechanism to provide data on asses
-                    up-front.
-                  </Timeline.Body>
-                </Timeline.Content>
-                <Timeline.Point />
-                <Timeline.Content>
-                  <Timeline.Time>Jul 2020</Timeline.Time>
-                  <Timeline.Title>
-                    Technical Program Manager - AWS
-                  </Timeline.Title>
-                  <Timeline.Body>
-                    Led a team of 6 software engineers to develop the software I
-                    proposed in a vision document through all phases of the
-                    SDLC. This software is now used as the single source of
-                    truth for data center builds and testing across AWS' global
-                    data center network.
-                  </Timeline.Body>
-                </Timeline.Content>
-                <TimelineContent>
-                  <Timeline.Body>
-                    More on my exprience{" "}
-                    <Link
-                      to={"/experience"}
-                      className="mx-1 hover:text-black underline"
-                    >
-                      here.
-                    </Link>
-                  </Timeline.Body>
-                </TimelineContent>
-              </Timeline.Item>
-            </Timeline>
-          </Card>
         </div>
       </section>
     </>
