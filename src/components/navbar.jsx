@@ -15,17 +15,23 @@ function MyNavbar() {
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse>
+              <Navbar.Link as={Link} to="/" className="text-white font-bold">
+                Home
+              </Navbar.Link>
               <Navbar.Link as={Link} to="experience" className="text-white">
                 Experience
+              </Navbar.Link>
+              <Navbar.Link as={Link} to="projects" className="text-white">
+                Projects
+              </Navbar.Link>
+              <Navbar.Link href="#Resume" className="text-white">
+                Resume
               </Navbar.Link>
               <Navbar.Link
                 href="mailto:zak.goldberg@gmail.com"
                 className="text-white"
               >
-                Contact
-              </Navbar.Link>
-              <Navbar.Link href="#Resume" className="text-white">
-                Resume
+                Email Me
               </Navbar.Link>
             </Navbar.Collapse>
           </Navbar>
