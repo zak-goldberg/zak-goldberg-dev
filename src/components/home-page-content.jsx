@@ -104,14 +104,13 @@ const HomePageContent = () => {
             <p>
               I'm an SF Bay Area based software professional with over 9 years
               of experience at Amazon and AWS, where I've served as both a
-              Software Development Manager and Technical Program Manager. I'm
+              Software Development Manager and a Technical Program Manager. I'm
               now seeking a Software Development Engineer role where I can apply
               my diverse technical background and leadership experience.
             </p>
             <h4 className="text-xl font-semibold">Pragmatic Solutions & Impact</h4>
             <p>
-              My time in management has given me a unique perspective on
-              software development, allowing me to balance pragmatic solutions
+              My time in management led me to balance pragmatic solutions
               with strategic thinking. I consistently drive impact beyond
               immediate team boundaries and thrive on building solutions that
               scale.
