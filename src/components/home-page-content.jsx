@@ -103,17 +103,18 @@ const HomePageContent = () => {
             <h4 className="text-xl font-semibold">Experience</h4>
             <p>
               I'm an SF Bay Area based software professional with over 9 years
-              of experience at Amazon and AWS, where I've served as both a
-              Software Development Manager and a Technical Program Manager. I'm
-              now seeking a Software Development Engineer role where I can apply
-              my diverse technical background and leadership experience.
+              of experience at Amazon and AWS, where I served as both a Software
+              Development Manager and a Technical Program Manager. I'm now
+              seeking a Software Development Engineer role where I can apply my
+              diverse technical background and leadership experience.
             </p>
-            <h4 className="text-xl font-semibold">Pragmatic Solutions & Impact</h4>
+            <h4 className="text-xl font-semibold">
+              Pragmatic Solutions & Impact
+            </h4>
             <p>
-              My time in management led me to balance pragmatic solutions
-              with strategic thinking. I consistently drive impact beyond
-              immediate team boundaries and thrive on building solutions that
-              scale.
+              My time in management led me to balance pragmatic solutions with
+              strategic thinking. I consistently drive impact beyond immediate
+              team boundaries and thrive on building solutions that scale.
             </p>
             <h4 className="text-xl font-semibold">Collaboration & Inclusion</h4>
             <p>
@@ -126,10 +127,11 @@ const HomePageContent = () => {
             </p>
             <h4 className="text-xl font-semibold">Not Just an Office Drone</h4>
             <p>
-              I love spending time with my wife, daughter, and family. I love
-              being outside running, cycling, and xc skiing. I also love to read
-              and follow the Virginia Cavaliers, the Orlando Magic, and the Golden
-              State Warriors.
+              I love spending time with my wife, daughter, and family. I am
+              outside as much as possible running 🏃🏻, cycling 🚴🏻, and
+              cross-country skiing ⛷. I enjoy reading fiction and non-fiction
+              and follow the Virginia Cavaliers, the Orlando Magic, and the
+              Golden State Warriors 🏀.
             </p>
           </Card>
           <div className="flex flex-col gap-4 w-full md:w-1/2">
@@ -174,7 +176,7 @@ const HomePageContent = () => {
                 </div>
                 <div className="flex gap-2">
                   <RenderIcon />
-                  <span>Render Deployment</span>
+                  <span>Render</span>
                 </div>
               </div>
             </Card>
@@ -190,7 +192,7 @@ const HomePageContent = () => {
                     </Timeline.Title>
                     <h5 className="font-light">AWS</h5>
                     <Timeline.Body>
-                      Managed a team of up to 12 SDEs that owned 6 backend
+                      Managed a team of 12 SDEs that owned 6 backend
                       microservices and supported the delivery of multiple
                       complex development initiatives including new feature
                       releases, non-functional improvements, and stack
@@ -207,9 +209,10 @@ const HomePageContent = () => {
                     <Timeline.Body>
                       Led multiple large software projects within AWS
                       Infrastructure throughout the SDLC. One example was a
-                      project to synchronize data center assets across systems,
-                      provide suppliers a mechanism to provide data on asses
-                      up-front.
+                      project to synchronize hundreds of thousands of data center
+                      assets across multiple systems, and to provide suppliers a
+                      mechanism to post data for new assets as part of the build
+                      process.
                     </Timeline.Body>
                   </Timeline.Content>
                   <Timeline.Point />

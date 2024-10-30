@@ -7,7 +7,7 @@ import {
   ReactIcon,
   ReactRouterIcon,
   TailwindIcon,
-  MongoIcon
+  MongoIcon,
 } from "./si-icons";
 import { Puzzle } from "lucide-react";
 
@@ -78,10 +78,10 @@ const Projects = () => {
           </div>
         </Card>
         <Card>
-          <h3 className="text-xl font-bold">Listening To Page</h3>
+          <h3 className="text-xl font-bold">Listening To Page (Fall 2024)</h3>
           <p>
-            Chron job to fetch my Spotify listening data, storing it in a
-            database, and serving it via an API to this app.
+            Future project to create a chron job to fetch my Spotify listening
+            data, store it in a database, and serve it via an API to this app.
           </p>
           <a>Link to repo TBD</a>
           <div className="grid grid-cols-2 gap-2">
