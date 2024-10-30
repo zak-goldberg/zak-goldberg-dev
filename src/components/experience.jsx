@@ -14,15 +14,15 @@ const Experience = () => {
                 <Timeline.Title>Software Development Manager</Timeline.Title>
                 <h5 className="font-light">AWS - Bellevue, WA</h5>
                 <Timeline.Body>
-                  I managed a team of up to 12 software engineers that owned 6
-                  backend microservices. I was responsible for people
-                  management, technical and product strategy development,
-                  roadmap planning, sprint planning, and system operations. I
-                  delivered consistent feedback, planned career growth, and
-                  managed underperformance as a people manager. I supported the
-                  delivery of multiple complex development initiatives including
-                  new feature releases, non-functional improvements (e.g.
-                  latency & availability), and stack regionalization.
+                  I managed a team of 12 software engineers and owned 6 backend
+                  microservices. I was responsible for people management,
+                  technical and product strategy development, roadmap planning,
+                  sprint planning, and system operations. I delivered consistent
+                  feedback, planned career growth, and managed underperformance
+                  as a people manager. I supported the delivery of multiple
+                  complex development initiatives including new feature
+                  releases, non-functional improvements (e.g. latency &
+                  availability), and stack regionalization.
                 </Timeline.Body>
               </Timeline.Content>
               <Timeline.Point />
@@ -32,11 +32,11 @@ const Experience = () => {
                 <h5 className="font-light">AWS - Bellevue, WA</h5>
                 <Timeline.Body>
                   I led multiple large software projects within AWS
-                  Infrastructure. These included a project to synchronize asset
-                  data across multiple internal systems and to create a
-                  mechanism for external parties to provide AWS with asset data
-                  before receipt at data centers. I also led a project to
-                  develop the front end and mechanisms for authentication,
+                  Infrastructure. These included a project to synchronize
+                  hundreds of thousands of data center assets across multiple
+                  systems, and to provide suppliers a mechanism to post data for
+                  new assets as part of the build process. I also led a project
+                  to develop the front end and mechanisms for authentication,
                   identity management, and authorization for a portal used by
                   500k+ Amazon vendors and temporary workers to register for
                   COVID testing.

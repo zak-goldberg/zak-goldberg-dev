@@ -192,7 +192,7 @@ const HomePageContent = () => {
                     </Timeline.Title>
                     <h5 className="font-light">AWS</h5>
                     <Timeline.Body>
-                      Managed a team of 12 SDEs that owned 6 backend
+                      Managed a team of 12 SDEs and owned 6 backend
                       microservices and supported the delivery of multiple
                       complex development initiatives including new feature
                       releases, non-functional improvements, and stack
